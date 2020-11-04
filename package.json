@@ -1,9 +1,9 @@
 {
-  "name": "gulp-elementary",
+  "name": "ed-zhurin-maksim-2",
   "version": "1.0.0",
   "description": "Simple gulp application",
   "main": "gulpfile.js",
-  "author": "ducker-dev <the.ivan.smirnov@gmail.com>",
+  "author": "Maksim2305 <max.zhurin@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.26.5",

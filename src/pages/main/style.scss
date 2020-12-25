@@ -1,31 +1,478 @@
-main.index-main {
-  padding: 30px 0;
+//collection
+.collection-wrapper{
+  position: relative;
+  margin-top: 129px;
+  background-color: #EEE4DB;
+  min-height: 372px;
+  max-width: 1180px;
 }
 
-.parallax-card {
-  max-width: 300px;
+.collection-number{
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
 
-  &__wrapper-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
-  }
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: none;
-    height: 100%;
-    min-width: 100.5%;
-  }
-  &__description {
-    background-color: #ff5722;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-  }
-  &__paragraph {
-    margin: 0;
-  }
+.collection-button-block{
+  position: absolute;
+  top: 17px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-title-block{
+  padding-top: 89px;
+  margin-left: 133px;
+}
+
+.collection-button{
+  margin-bottom: 11px;
+  width: 31px;
+  height: 3px;
+  background-color:#D6CAC2;
+  border: none;
+}
+
+
+.collection-button:hover{
+  display: flex;
+  flex-direction: column;
+  width: 31px;
+  height: 3px;
+  background-color:#1E0606;
+  cursor: pointer;
+  border: none;
+}
+
+
+.collection-title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  color: #1E0606;
+  width: 307px;
+  height: 88px;
+
+}
+
+.collection-design{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  color: #1E0606;
+  margin-top: 20px;
+}
+
+.collection-image{
+  position: absolute;
+  left: 445px;
+  bottom: 0px;
+  
+}
+
+.collection-button-explore{
+  display: inline-block;
+  margin-top: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 9px 22px;
+  border: none;
+}
+
+.collection-button-explore:hover{
+  background-color: #C29974;
+}
+
+.collection-button-explore:focus{
+  outline-color: #C29974;
+}
+
+.collection-button-explore:active{
+  background-color: #CFAF91;
+}
+
+.collection-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 39px;
+  background-color: #C29974;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+.active.collection-button{
+  background-color: #1E0606;
+}
+
+//category-products
+
+
+//delivery
+.delivery-wrapper{
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  width: 1080px;
+  height: 559px;
+}
+
+.delivery-title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-transform: uppercase;
+}
+
+.delivery-content-block{
+  margin-left: 120px;
+}
+
+
+.delivery-image{
+
+}
+
+.delivery-menu-list{
+  margin-left: -60px;
+  margin-top: 6px;
+}
+
+.delivery-menu-item{
+  background-color: #ffffff;
+  width: 326px;
+  height: 55px;
+  padding: 11px 180px 11px 60px;
+  margin-bottom: 11px;
+}
+
+.delivery-menu-item:hover{
+  cursor: pointer;
+}
+
+.delivery-menu-link{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+}
+
+.active.delivery-menu-link{
+  font-weight: bold;
+  background-color: #E2F1F8;
+  cursor: pointer;
+  width: 326px;
+  height: 55px;
+  padding: 11px 180px 11px 60px;
+  margin-left: -60px;
+}
+
+.delivery-menu-link:hover{
+  font-weight: bold;
+}
+
+.delivery-content{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-top: 15px;
+}
+
+.delivery-menu-learn{
+  display: flex;
+  text-align: center;
+  margin-top: 26px;
+  text-transform: uppercase;
+  padding: 9px 22px 9px 22px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 149px;
+  height: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}    
+
+.delivery-menu-learn:hover{
+  background-color: #C29974;
+}
+
+.delivery-menu-learn:active{
+  background-color: #CFAF91;
+}
+
+.delivery-menu-learn:focus{
+  outline-color: #C29974;
+}
+
+//partners
+.partners-menu-list{
+  margin-top: 91px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partners-menu-item:hover{
+  cursor: pointer;
+}
+
+//delivery
+.delivery-wrapper{
+  display: flex;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  width: 1080px;
+  height: 559px;
+}
+
+.delivery-title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1E0606;
+  text-transform: uppercase;
+}
+
+.delivery-content-block{
+  margin-left: 120px;
+}
+
+
+.delivery-image{
+
+}
+
+.delivery-menu-list{
+  margin-left: -60px;
+  margin-top: 6px;
+}
+
+.delivery-menu-item{
+  background-color: #ffffff;
+  width: 326px;
+  height: 55px;
+  padding: 11px 180px 11px 60px;
+  margin-bottom: 11px;
+}
+
+.delivery-menu-item:hover{
+  cursor: pointer;
+}
+
+.delivery-menu-link{
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+}
+
+.active.delivery-menu-link{
+  font-weight: bold;
+  background-color: #E2F1F8;
+  cursor: pointer;
+  width: 326px;
+  height: 55px;
+  padding: 11px 180px 11px 60px;
+  margin-left: -60px;
+}
+
+.delivery-menu-link:hover{
+  font-weight: bold;
+}
+
+.delivery-content{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-top: 15px;
+}
+
+.delivery-menu-learn{
+  display: flex;
+  text-align: center;
+  margin-top: 26px;
+  text-transform: uppercase;
+  padding: 9px 22px 9px 22px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 149px;
+  height: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}    
+
+.delivery-menu-learn:hover{
+  background-color: #C29974;
+}
+
+.delivery-menu-learn:active{
+  background-color: #CFAF91;
+}
+
+.delivery-menu-learn:focus{
+  outline-color: #C29974;
+}
+
+//about-us
+
+.about-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 116px;
+  margin-bottom: 147px;
+}
+
+.about-us-design-block{
+  background-color: #E1F0F7;
+}
+
+.about-us-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-top: -26px;
+  padding-left: 30px;
+}
+
+.about-us-description {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1E0606;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.about-us-content {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.about-us-buy-link {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 9px 22px 9px 22px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 123px;
+  height: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us-buy-link:hover{
+  background-color: #C29974;
+}
+
+.about-us-buy-link:focus{
+  outline-color: #C29974;
+}
+
+.about-us-buy-link:active{
+  background-color: #CFAF91;
+}
+
+.about-us-contact-block {
+  margin-left: 57px;
+  position: relative;
+}
+
+.about-us-contact {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-left: 30px;
+  margin-top: -26px;
+  
+}
+
+.about-us-contact-content {
+  position: relative;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  padding: 20px 30px 20px;
+  min-height: 209px;
+  background-color: #E1F0F7;
+}
+
+.about-us-map {
+  position: absolute;
+  top: 127px;
+  left: 30px;
+  right: 30px;
 }

@@ -14,14 +14,48 @@
   </head>
   <body>
     @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
+    <main class="category-products container">
+      <h1 class="category-products-title-one">category-products</h1>
+      <ol class="category-products-title-menu">
+          <li class="category-products-title-item">
+              <a href="/index.html" class="category-products-title-link">Home</a>
+          </li>
+          <li class="category-products-title-item">
+              <a class="active-catalog">Catalog</a>
+          </li>
+      </ol>
+
+      <div class="category-products-wrapper">
+          <ul class="category-products-block-images">
+              <li class="category-products-block-images-item kids">
+                  <h3 class="category-products-block-images-title">Apparel kids</h3>
+              </li>
+              <li class="category-products-block-images-item shop">
+                  <h3 class="category-products-block-images-title">Holiday shop</h3>
+              </li>
+              <li class="category-products-block-images-item toys">
+                  <h3 class="category-products-block-images-title">Toys</h3>
+              </li>
+              <li class="category-products-block-images-item accessories">
+                  <h3 class="category-products-block-images-title">Accessories</h3>
+              </li>
+              <li class="category-products-block-images-item sale">
+                  <h3 class="category-products-block-images-title">Sale</h3>
+              </li>
+              <li class="category-products-block-images-item adults">
+                  <h3 class="category-products-block-images-title">Apparel adults</h3>
+              </li>
+          </ul>
       </div>
-    </main>
+      <h2 class="category-products-title-two">Product Description</h2>
+      <p class="category-products-info">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
+          even bathe her, just like a little sister.</p>
+      <p class="category-products-info">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be
+          an excellent choice for a gift for a girl from 4 years old.</p>
+      <p class="category-products-info">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+          hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young
+          mistress.</p>
+  </main>
     @@include('footer/index.html')
     <script src="index.js"></script>
   </body>

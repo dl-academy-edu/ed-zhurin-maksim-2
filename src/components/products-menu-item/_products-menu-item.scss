@@ -1,0 +1,139 @@
+.products-wrapper {
+  position: relative;
+  margin-top: 90px;
+  max-width: 1180px;
+}
+
+.products-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #1e0606;
+}
+
+.products-menu-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-menu-item {
+  width: 25%;
+  padding: 10px;
+}
+
+.products-menu-item.kids {
+  background-image: url("/static/images/produtcs/1.jpg");
+  width: 280px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.products-menu-item.shop {
+  background-image: url(/static/images/produtcs/2.jpg);
+  width: 280px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.products-menu-item.toys {
+  background-image: url(/static/images/produtcs/3.jpg);
+  width: 280px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.products-menu-item.accessories {
+  background-image: url(/static/images/produtcs/4.jpg);
+  width: 280px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.products-menu-description {
+  display: flex;
+  width: 580px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e0606;
+}
+
+.products-menu-list-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 192px;
+}
+
+.products-menu-list-title:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.products-menu-list-title:active {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 33px;
+  margin-right: auto;
+}
+
+.products-button-left {
+  background-size: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  background-image: url(/images/buttons/Vector.svg);
+  border: none;
+  transform: rotate(180deg);
+  background-color: #e2f1f8;
+  margin-right: 6px;
+}
+
+.products-button-right {
+  background-size: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  background-image: url(/images/buttons/Vector.svg);
+  border: none;
+  background-color: #e2f1f8;
+  margin-right: 20px;
+}
+
+.products-button-left:hover,
+.products-button-right:hover {
+  background-image: url(/images/buttons/Vector-hover.svg);
+  cursor: pointer;
+}
+
+.products-button-left:active,
+.products-button-right:active {
+  background-image: url(/images/buttons/Vector-active.svg);
+}

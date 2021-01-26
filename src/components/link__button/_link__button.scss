@@ -1,0 +1,25 @@
+.link__button{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 9px 22px 9px 22px;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }    
+  
+  .link__button:hover{
+    background-color: #C29974;
+  }
+  
+  .link__button:active{
+    background-color: #CFAF91;
+  }
+  
+  .link__button:focus{
+    outline-color: #C29974;
+  }

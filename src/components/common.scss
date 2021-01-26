@@ -1,7 +1,10 @@
 
+@import "./vars";
+
 * {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  font-family: 'Crimson Text', serif;
   box-sizing: border-box;
 }
 
@@ -32,9 +35,27 @@ h1, h2, h3, h4, h5, h6, p {
   padding-right: 110px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width:$md) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (max-width:$sm) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
+
+
+
 
 // Подключение компонентов
 @import "./header/header";
 @import "./footer/footer";
-@import "./products-menu-item/products-menu-item";
+@import "./button/button";
+@import "./products-item/products-item";
+@import "./link__button/link__button";
+@import "./rating-group/rating-group";
+@import "./map/map";
+@import "./popup/popup";

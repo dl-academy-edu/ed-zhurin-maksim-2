@@ -1,25 +1,83 @@
 <header class="header container">
-  <a href="/index.html"><img src="/static/images/logo.jpg" width="100" width="52" alt="Site logo" class="header-logo"></a>
-  <nav class="header-menu">
-      <ul class="header-menu-list">
-          <li class="header-list-item">
-              <a href="/blog.html" class="header-list-link">Blog</a>
-          </li>
-          <li class="header-list-item">
-              <a href="/Catalog.html" class="header-list-link">Catalog</a>
-          </li>
-          <li class="header-list-item">
-              <a href="#" class="header-list-link">About us</a>
-          </li>
-  </nav>
-  <nav class="header-contact">
-      <ul class="header-menu-contact">
-          <li class="header-contact-item">
-              <a href="#" class="header-link-serch"><img src="/static/images/serch.png" alt="Serch"></a>
-          </li>
-          <li class="header-contact-item">
-              <a href="/contact-us.html" class="header-contact-link">Contact Us</a>
-          </li>
-      </ul>
-  </nav>
+    <div class="header__wrapper">
+        <ul class="header__list">
+            <li class="header__item__logo">
+                <a href="/index.html"><img src="/static/images/logo.jpg" alt="Site logo" class="header__logo"></a>
+            </li>
+            <li class="header__item">
+                <a href="/blog.html" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+                <a href="/Catalog.html" class="header__link">Catalog</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">About us</a>
+            </li>
+        </ul>
+        <ul class="header__list_contact">
+            <li class="header__item_contact">
+                <a href="#" class="header__serch"><img class="search" src="/static/images/serch.png" alt="Search"></a>
+            </li>
+            <li class="header__item">
+                <a href="/contact-us.html" class="header__link">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mobile-header">
+        <div class="header__list">
+            <div class="mobile-header__item">
+                <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
+            </div>
+            <div class="mobile-header__item-open">
+                <div class="mobile-menu">
+                        <input type="checkbox" class="mobile-menu__checkbox" id="menu"></input>
+                        <label class="mobile-menu__label" for="menu"></label>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">catalog</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">about us</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">blog</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">animation</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">svg</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">grid</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="header__link" href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-header__item">
+                <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile__popup">
+        <!-- <div class="mobile-header">
+                    <ul class="header__list">
+                        <li class="mobile-header__item">
+                            <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <button class="mobile-header__button_close">x</button>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
+                        </li>
+                    </ul>
+                </div> -->
+
+    </div>
 </header>

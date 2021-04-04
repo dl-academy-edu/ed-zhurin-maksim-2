@@ -6,11 +6,10 @@
     padding: 10px;
     
     @media screen and (max-width:$lg) {
-      min-width: 278px;
+      min-width: 258px;
     }
-
     @media screen and (max-width:$md) {
-      min-width: 268px;
+      min-width: 247px;
     }
 
     &__image{

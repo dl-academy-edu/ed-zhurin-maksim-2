@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
+    
 
     &__form{
         position: relative;
@@ -56,10 +57,14 @@
 
         &_check{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
-        
+            justify-content: flex-start;
         }
+    }
+
+    &__inputs{
+        margin-bottom: 20px;
     }
 
     &__button-close{
@@ -85,10 +90,8 @@
     color: #1E0606;
 }
 
-.link__button{
+.link__button:disabled{
     background-color: rgba(193,193,193,1);
-    margin-top: 20px;
-    justify-self: flex-start;
 }
 
 

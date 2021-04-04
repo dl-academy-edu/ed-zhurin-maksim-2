@@ -3,23 +3,25 @@
     text-align: center;
     text-transform: uppercase;
     padding: 9px 22px 9px 22px;
-    color: #ffffff;
-    background-color: #000000;
+    color: #fff;
+    background-color: black;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
+    border: none;
+
+    &:hover{
+      background-color: #C29974;
+    }
+    
+    &:active{
+      background-color: #CFAF91;
+    }
+    
+    &:focus{
+      outline-color: #C29974;
+    }
   }    
   
-  .link__button:hover{
-    background-color: #C29974;
-  }
-  
-  .link__button:active{
-    background-color: #CFAF91;
-  }
-  
-  .link__button:focus{
-    outline-color: #C29974;
-  }

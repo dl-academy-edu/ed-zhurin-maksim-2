@@ -5,13 +5,13 @@
                 <a href="/index.html"><img src="/static/images/logo.jpg" alt="Site logo" class="header__logo"></a>
             </li>
             <li class="header__item">
-                <a href="/blog.html" class="header__link">Blog</a>
+                <a href="/pages/blog/index.html" class="header__link">Blog</a>
             </li>
             <li class="header__item">
-                <a href="/Catalog.html" class="header__link">Catalog</a>
-            </li>
+                <a href="/pages/catalog/index.html" class="header__link">Catalog</a>
+            </li> 
             <li class="header__item">
-                <a href="#" class="header__link">About us</a>
+                <a href="/pages/toys/index.html" class="header__link">About us</a>
             </li>
         </ul>
         <ul class="header__list_contact">
@@ -25,59 +25,46 @@
     </div>
 
     <div class="mobile-header">
-        <div class="header__list">
-            <div class="mobile-header__item">
+        <ul class="header__list">
+            <li class="mobile-header__item">
                 <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
-            </div>
-            <div class="mobile-header__item-open">
-                <div class="mobile-menu">
-                        <input type="checkbox" class="mobile-menu__checkbox" id="menu"></input>
-                        <label class="mobile-menu__label" for="menu"></label>
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">catalog</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">about us</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">blog</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">animation</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">svg</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">grid</a>
-                        </li>
-                        <li class="mobile-menu__item">
-                            <a class="header__link" href="#">contact us</a>
-                        </li>
-                    </ul>
+            </li>
+            <li class="mobile-header__item">
+                <div class="mobile-header__menu">
+                    <a  class="open-mobile-popup" href="#">menu</a>
+                    <a  class="close-mobile-popup" href="#">+</a>
                 </div>
-            </div>
-            <div class="mobile-header__item">
+            </li>
+            <li class="mobile-header__item">
                 <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="mobile__popup">
-        <!-- <div class="mobile-header">
-                    <ul class="header__list">
-                        <li class="mobile-header__item">
-                            <a href="/index.html"><img class="header__logo" src="/static/images/logo.jpg" alt="Site logo"></a>
-                        </li>
-                        <li class="mobile-header__item">
-                            <button class="mobile-header__button_close">x</button>
-                        </li>
-                        <li class="mobile-header__item">
-                            <a href="#" class="header__serch"><img src="/static/images/serch.png" alt="Search"></a>
-                        </li>
-                    </ul>
-                </div> -->
-
+            </li>
+        </ul>
     </div>
 </header>
+<section class="mobile-section">
+    <div class="mobile-popup">
+        <ul class="mobile-popup__list">
+            <li class="mobile-popup__item">
+                <a class="header__link" href="/pages/catalog/index.html">catalog</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="/pages/toys/index.html">about us</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="/pages/blog/index.html">blog</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">animation</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">svg</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">grid</a>
+            </li>
+            <li class="mobile-popup__item">
+                <a class="header__link" href="#">contact us</a>
+            </li>
+        </ul>
+    </div>
+</section>

@@ -10,3 +10,19 @@ popupButtonOpen.addEventListener("click", function(){
 popupButtonClose.addEventListener("click", function(){
     html.classList.remove("popup-open");
 });
+
+
+var mobileMenuOpen = document.querySelector(".open-mobile-popup");
+var mobileMenuClose = document.querySelector(".close-mobile-popup");
+
+
+mobileMenuOpen.addEventListener("click", function(){
+    html.classList.toggle("hide-menu");
+    html.classList.toggle("active");
+});
+
+mobileMenuClose.addEventListener("click", function(){
+    html.classList.toggle("hide-menu");
+    html.classList.toggle("active");
+});
+

@@ -17,6 +17,7 @@
     }
 
   &__wrapper{
+    position: relative;
     display: flex;
     align-items: flex-end;
     background-color: #EEE4DB;
@@ -30,7 +31,6 @@
     &_img{
       margin-top: -89px;
       @media screen and (max-width:$md) {
-        position: relative;
         padding-bottom: 286px;
       }
     }
@@ -40,17 +40,24 @@
       width: 100%;
       height: auto;
       min-width: 385px;
+      @media screen and (max-width:$lg) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: auto;
+      }
       @media screen and (max-width:$md) {
         position: absolute;
         bottom: 0;
-        left: -120px;
-        width: 100%;
-        height: 100%;
+        right: 0;
+        width: 50%;
+        height: auto;
       }
       @media screen and (max-width:$sm) {
         position: absolute;
         bottom: 0;
-        left: 74px;
+        right: 0;
         min-width: 292px;
         max-height: 226px;
       }
@@ -79,31 +86,24 @@
     display: flex;
     flex-direction: column;
     align-self: start;
-    margin-top: 17px;
-    margin-left: 28px;
-    margin-right: 40px;
+    padding: 17px 11px 0px 28px;
     @media screen and (max-width:$md) {
-      margin-left: 0px;
-      margin-right: 10px;
+      padding: 0 0 0 0;
     }
     @media screen and (max-width:$sm) {
-      margin-right: 20px;
-      margin-top: 20px;
-      margin-left: 10px;
+      padding: 20px 20px 0px 0px;
     }
     
   }
 
   &__title_block{
-    margin: 89px 0px;
+    padding: 89px 0px;
     @media screen and (max-width:$md) {
-      margin-top: 76px;
-      margin-bottom: 102px;
+      padding-top: 76px;
+      padding-bottom: 102px;
     }
     @media screen and (max-width:$sm) {
-      margin-top: 80px;
-      margin-bottom: 188px;
-      margin-left: 20px;
+      padding: 80px 0px 188px 20px;
     }
   }
 
@@ -154,9 +154,8 @@
     &_block{
       display: flex;
       flex-direction: column;
-      min-width: 307px;
       @media screen and (max-width:$sm) {
-        min-width: 276px;
+        padding: 80px 0px 188px 20px;
       }
     }
   }
@@ -197,14 +196,9 @@
 
 
 
-//category-products
+//category-products=================
 .products{
-  @media screen and (max-width:$md) {
-    padding-right: 0;
-  }
-  @media screen and (max-width:$sm) {
-    padding-right: 0;
-  }
+  
   &__wrapper {
     margin-top: 90px;
     width: 100%;
@@ -226,6 +220,10 @@
     margin: 20px -10px;
     display: flex;
     overflow: hidden;
+    @media screen and (max-width:$sm) {
+      margin-top: 60px;
+      overflow: auto;
+    }
   }
 
 
@@ -292,7 +290,6 @@
     margin-top: 60px;
     @media screen and (max-width:$sm) {
       margin-top: 80px;
-      padding-right: 20px;
     }
   }
 
@@ -307,7 +304,6 @@
   &__inner_img{
     position: relative;
     flex: 0 0 33.333%;
-    min-width: 258px;
     @media screen and (max-width:$sm) {
       padding-bottom: 357px;
     }
@@ -359,7 +355,6 @@
     }
 
     &_button-active{
-      margin-left: -60px;
       @media screen and (max-width:$md) {
         margin-left: -36px;
       }
@@ -389,8 +384,8 @@
 
     &_item-active{
       display: inline-block;
-      background: rgba(112, 187, 220, 0.2);
-      padding: 11px 180px 11px 60px;
+      background-color: rgba(112, 187, 220, 0.2);
+      width: 100%;
       font-family: Crimson Text;
       font-style: italic;
       font-weight: bold;
@@ -398,7 +393,6 @@
       line-height: 32px;
       color: #1E0606;
       @media screen and (max-width:$md) {
-        padding: 8px 167px 7px 20px;
         font-size: 24px;
         line-height: 30px;
       }
